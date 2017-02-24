@@ -70,7 +70,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-scss-lint');
 
 
-    grunt.registerTask('default', ['styles', 'html', 'watch', 'browserSync']);
+    grunt.registerTask('default', ['styles', 'html', 'browserSync', 'watch']);
     grunt.registerTask('styles', ['scsslint','sass']);
     grunt.registerTask('html', ['htmllint']);
     grunt.registerTask('js', ['jslint']);
